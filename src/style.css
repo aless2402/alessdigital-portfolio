@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: theme('colors.magenta');
+  color: white;
+}
+
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  color: theme('colors.cyan');
+  text-transform: uppercase;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, theme('colors.magenta'), theme('colors.blue'), theme('colors.cyan'));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: rgba(233, 30, 140, 0.45);
+  transform: translateY(-4px);
+}
