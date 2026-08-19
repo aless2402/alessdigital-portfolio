@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tema oscuro por defecto (premium, combina con el fondo animado del hero) */
+:root {
+  --color-bg-deep: 10 8 24;
+  --color-surface: 255 255 255;
+  --color-ink: 243 241 251;
+  --color-ink-dim: 168 162 196;
+  --color-border: 255 255 255;
+  --card-bg: rgba(255, 255, 255, 0.04);
+  --card-bg-hover: rgba(255, 255, 255, 0.07);
+}
+
+/* Tema claro, activado con la clase .light en <html> */
+:root.light {
+  --color-bg-deep: 247 246 251;
+  --color-surface: 10 8 24;
+  --color-ink: 20 16 41;
+  --color-ink-dim: 90 84 115;
+  --color-border: 10 8 24;
+  --card-bg: rgba(10, 8, 24, 0.03);
+  --card-bg-hover: rgba(10, 8, 24, 0.05);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: theme('colors.magenta');
+  color: white;
+}
+
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  color: theme('colors.cyan');
+  text-transform: uppercase;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, theme('colors.magenta'), theme('colors.blue'), theme('colors.cyan'));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card {
+  background: linear-gradient(160deg, var(--card-bg), transparent);
+  border: 1px solid rgb(var(--color-border) / 0.08);
+  transition: border-color 0.2s, transform 0.2s, background 0.2s;
+}
+
+.card:hover {
+  border-color: rgba(233, 30, 140, 0.45);
+  transform: translateY(-4px);
+  background: linear-gradient(160deg, var(--card-bg-hover), transparent);
+}
+
+/* Animación de aparición al hacer scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
