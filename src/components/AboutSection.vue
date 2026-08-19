@@ -8,10 +8,10 @@ const facts = [
 </script>
 
 <template>
-  <section id="sobre-mi" class="max-w-6xl mx-auto px-6 py-28 grid md:grid-cols-2 gap-12 items-center">
-    <div>
+  <section id="sobre-mi" class="max-w-6xl mx-auto px-6 py-20 sm:py-28 grid md:grid-cols-2 gap-12 items-center">
+    <div v-reveal>
       <p class="eyebrow mb-4">01 · sobre mí</p>
-      <h2 class="font-display text-3xl font-semibold mb-5">Del código a la operación real de un negocio.</h2>
+      <h2 class="font-display text-2xl sm:text-3xl font-semibold mb-5">Del código a la operación real de un negocio.</h2>
       <p class="text-ink-dim leading-relaxed">
         Soy desarrolladora full stack con enfoque orientado al detalle, especializada en
         software de gestión: cada sistema que construyo resuelve un problema operativo
@@ -20,13 +20,13 @@ const facts = [
         datos a la interfaz final.
       </p>
     </div>
-    <div class="card rounded-2xl p-8">
+    <div v-reveal class="card rounded-2xl p-6 sm:p-8">
       <ul class="space-y-4 font-mono text-sm">
         <li
           v-for="(fact, i) in facts"
           :key="fact.label"
           class="flex justify-between pb-3"
-          :class="{ 'border-b border-white/5': i < facts.length - 1 }"
+          :class="{ 'border-b border-border-subtle/10': i < facts.length - 1 }"
         >
           <span class="text-ink-dim">{{ fact.label }}</span>
           <span>{{ fact.value }}</span>
