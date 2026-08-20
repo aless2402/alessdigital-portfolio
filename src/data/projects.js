@@ -54,7 +54,7 @@ const raw = [
       'Catálogo administrable de producciones audiovisuales.',
     tech: ['Vue 3', 'Laravel', 'MySQL'],
     image: '/images/projects/filmografia-web.jpg',
-    icon: '/images/projects/icons/filmografia.ico',
+    icon: '/images/projects/icons/filmografia-web.ico',
     gradient: 'from-magenta to-gold',
     featured: false
   },
