@@ -41,8 +41,8 @@ const raw = [
     description:
       'Registro y verificación digital de carnets sanitarios municipales.',
     tech: ['Vue 3', 'Laravel', 'MySQL'],
-    image: '/images/projects/carnet-sanidad.jpg',
-    icon: '/images/projects/icons/carnet-sanidad.svg',
+    image: '/images/projects/carnet_sanidad_sistema.png',
+    icon: '/images/projects/icons/logo-bellavista.ico',
     gradient: 'from-gold to-magenta',
     featured: false
   },
