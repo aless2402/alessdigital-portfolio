@@ -1,39 +1,43 @@
 const raw = [
   {
-    slug: 'crm',
-    title: 'Freelancer CRM',
-    description:
-      'Gestión de clientes, propuestas y pagos para profesionales independientes.',
-    tech: ['Vue 3', 'Laravel', 'MySQL'],
-    image: '/images/projects/crm.jpg',
-    icon: '/images/projects/icons/crm.svg',
-    gradient: 'from-magenta to-blue',
-    featured: true
-  },
-
-  {
-    slug: 'inventario',
-    title: 'Sistema de Inventario',
-    description:
-      'Control de stock, alertas de quiebre y reportes por almacén.',
-    tech: ['Vue 3', 'Laravel', 'MySQL'],
-    image: '/images/projects/inventario.jpg',
-    icon: '/images/projects/icons/inventario.svg',
-    gradient: 'from-blue to-cyan',
-    featured: true
-  },
-
-  {
-    slug: 'facturacion',
-    title: 'Facturación Electrónica',
-    description:
-      'Emisión de comprobantes válidos ante SUNAT, integrado a ventas.',
-    tech: ['Vue 3', 'Laravel', 'MySQL'],
-    image: '/images/projects/facturacion.jpg',
-    icon: '/images/projects/icons/facturacion.svg',
-    gradient: 'from-cyan to-magenta',
-    featured: true
-  },
+  slug: 'crm',
+  title: 'Freelancer CRM',
+  description:
+    'Gestión de clientes, propuestas y pagos para profesionales independientes.',
+  tech: ['Vue 3', 'Laravel', 'MySQL'],
+  image: '/images/projects/crm.jpg',
+  icon: '/images/projects/icons/crm.svg',
+  gradient: 'from-magenta to-blue',
+  featured: true,
+  status: 'developing',
+  statusLabel: 'En desarrollo'
+},
+{
+  slug: 'inventario',
+  title: 'Sistema de Inventario',
+  description:
+    'Control de stock, alertas de quiebre y reportes por almacén.',
+  tech: ['Vue 3', 'Laravel', 'MySQL'],
+  image: '/images/projects/inventario.jpg',
+  icon: '/images/projects/icons/inventario.svg',
+  gradient: 'from-blue to-cyan',
+  featured: true,
+  status: 'developing',
+  statusLabel: 'En desarrollo'
+},
+{
+  slug: 'facturacion',
+  title: 'Facturación Electrónica',
+  description:
+    'Emisión de comprobantes válidos ante SUNAT, integrado a ventas.',
+  tech: ['Vue 3', 'Laravel', 'MySQL'],
+  image: '/images/projects/facturacion.jpg',
+  icon: '/images/projects/icons/facturacion.svg',
+  gradient: 'from-cyan to-magenta',
+  featured: true,
+  status: 'developing',
+  statusLabel: 'En desarrollo'
+},
 
   {
     slug: 'carnet-sanidad',
